@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-page</title>
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">TasteBite</div>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../index.html">Menu</a></li>
+          <li><a href="../reservation/booking.html">Reservations</a></li>
+          <li><a href="#">Contact</a></li>
+
+          <!-- Mobile CTA + Login Buttons -->
+          <a href="#" class="mobile-cta">Order Now</a>
+          <a href="../login/login.html" class="mobile-login">Login</a>
+        </ul>
+
+        <!-- Desktop Buttons -->
+        <div class="desktop-buttons">
+          <a href="#" class="cta-btn">Order Now</a>
+          <a href="../login/login.html" class="login-btn">Login</a>
+        </div>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTACT PAGE MAIN WRAPPER -->
+<section class="contact-section">
+
+  <div class="contact-container">
+
+    <!-- LEFT SIDE IMAGE -->
+    <div class="contact-image">
+      <img src="../assets/phone-01.jpg" alt="Contact Image" id="phoneImage">
+    </div>
+
+    <!-- FORM -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Fill out the form and our team will get back to you quickly.</p>
+
+      <form id="contactForm">
+
+        <div class="input-group">
+          <label>Your Name</label>
+          <input type="text" id="cname" placeholder="Enter your name">
+        </div>
+
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email" id="cemail" placeholder="Enter your email">
+        </div>
+
+        <div class="input-group">
+          <label>Message</label>
+          <textarea id="cmessage" placeholder="Write your message..." rows="5"></textarea>
+        </div>
+
+        <button class="contact-btn">Send Message</button>
+      </form>
+    </div>
+
+    <!-- MAP -->
+    <div class="contact-map">
+      <iframe 
+        src="https://maps.google.com/maps?q=karachi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" 
+        allowfullscreen 
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+</section>
+
+
+    <script src="./contact.js"></script>
+  </body>
+</html>
