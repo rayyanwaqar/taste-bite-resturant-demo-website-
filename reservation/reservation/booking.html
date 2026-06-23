@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TasteBite</title>
+    <link rel="stylesheet" href="./booking.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">TasteBite</div>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../index.html">Menu</a></li>
+          <li><a href="#">Reservations</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+
+          <!-- Mobile CTA + Login Buttons -->
+          <a href="#" class="mobile-cta">Order Now</a>
+          <a href="../login/login.html" class="mobile-login">Login</a>
+        </ul>
+
+        <!-- Desktop Buttons -->
+        <div class="desktop-buttons">
+          <a href="#" class="cta-btn">Order Now</a>
+          <a href="../login/login.html" class="login-btn">Login</a>
+        </div>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section id="reservation" class="reservation">
+      <div class="reservation-container">
+        <!-- Left Image -->
+        <div class="reservation-image">
+          <img
+            src="../assets/table-book-01.jpg"
+            alt="Table Reservation"
+            id="reservedTable"
+          />
+        </div>
+
+        <!-- Right Form -->
+        <div class="reservation-form">
+          <h2>Book Your Table</h2>
+          <p>
+            Reserve your table in advance and enjoy a delicious experience with
+            us.
+          </p>
+
+          <form id="bookingForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input type="date" id="date" required />
+            </div>
+            <div class="form-group">
+              <input type="time" id="time" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="number"
+                id="guests"
+                placeholder="Number of Guests"
+                min="1"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="requests"
+                placeholder="Special Requests (Optional)"
+              ></textarea>
+            </div>
+            <button type="submit" class="booking-btn">Book Now</button>
+          </form>
+          <!-- Success Message -->
+<div id="successMsg" class="success-msg"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./booking.js"></script>
+  </body>
+</html>
