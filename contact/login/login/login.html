@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login-autht</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">TasteBite</div>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../index.html">Menu</a></li>
+          <li><a href="../reservation/booking.html">Reservations</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+
+          <!-- Mobile CTA + Login Buttons -->
+          <a href="#" class="mobile-cta">Order Now</a>
+          <a href="#" class="mobile-login">Login</a>
+        </ul>
+
+        <!-- Desktop Buttons -->
+        <div class="desktop-buttons">
+          <a href="#" class="cta-btn">Order Now</a>
+          <a href="#" class="login-btn">Login</a>
+        </div>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- LEFT FORM -->
+      <div class="form-side">
+        <h2 id="form-title">Login</h2>
+        <div class="message" id="message"></div>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button id="submit-btn">Login</button>
+        <div class="toggle">
+          Don't have an account? <span id="toggle-form">Signup</span>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="image-side"></div>
+    </div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>
