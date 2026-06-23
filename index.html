@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TasteBite</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">TasteBite</div>
+
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="./reservation/booking.html">Reservations</a></li>
+          <li><a href="./contact/contact.html">Contact</a></li>
+
+          <!-- Mobile CTA + Login Buttons -->
+          <a href="#" class="mobile-cta">Order Now</a>
+          <a href="./login/login.html" class="mobile-login">Login</a>
+        </ul>
+
+        <!-- Desktop Buttons -->
+        <div class="desktop-buttons">
+          <a href="#" class="cta-btn">Order Now</a>
+          <a href="./login/login.html" class="login-btn">Login</a>
+          <!-- Add this cart icon -->
+          <div class="cart-icon">
+            <img src="./assets/cart.png" alt="tableBook" />
+            <span class="cart-count">0</span>
+            <div class="cart-dropdown"></div>
+          </div>
+        </div>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Welcome!<br />
+          We Make Delicious<br />
+          Foods For You
+        </h1>
+        <p>
+          TasteBite offers freshly prepared meals that bring joy to your table.
+          Enjoy delicious flavors with a click of a button.
+        </p>
+        <a href="#" class="hero-btn">Order Now</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-container">
+        <h2>Why We Are Best Food Maker</h2>
+        <p class="about-subtext">
+          TasteBite has been serving fresh and delicious meals with love and
+          care. Our chefs ensure every dish is made to perfection.
+        </p>
+
+        <div class="about-content">
+          <!-- Left Text -->
+          <div class="about-text">
+            <h3>Our Story</h3>
+            <p>
+              At TasteBite, we combine quality ingredients with passion to
+              create unforgettable culinary experiences. We focus on taste,
+              presentation, and hygiene. Join our family of happy customers
+              today! Our recipes are crafted from scratch using only fresh
+              ingredients. Every dish is prepared to satisfy your cravings and
+              leave you wanting more. From appetizers to desserts, every bite is
+              a delight. TasteBite is committed to providing excellent service
+              and a memorable dining experience. We believe in quality, taste,
+              and customer happiness above all. Come and enjoy a meal made with
+              love!
+            </p>
+          </div>
+
+          <!-- Right Image -->
+          <div class="about-image-box">
+            <img id="aboutImage" src="./assets/img-03.jpg" alt="Food Image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2 class="menu-title">Our Menu</h2>
+
+      <!-- Filter Buttons -->
+      <div class="menu-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="Pizza">Pizza</button>
+        <button class="filter-btn" data-category="Pasta">Pasta</button>
+        <button class="filter-btn" data-category="Drinks">Drinks</button>
+        <button class="filter-btn" data-category="Desserts">Desserts</button>
+      </div>
+
+      <!-- Cards will render here -->
+      <div class="menu-container"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left -->
+        <div class="footer-left">
+          <h2 class="footer-logo">TasteBite</h2>
+          <p class="footer-desc">
+            Making web experiences fast, modern and beautiful. Stay connected
+            with us!
+          </p>
+        </div>
+
+
+        <!-- Right Social Icons -->
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="social"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 YourBrand — All Rights Reserved.</div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
